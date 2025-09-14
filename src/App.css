@@ -1,0 +1,229 @@
+#root {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins','sans-serif'
+}
+
+
+/* Push content below navbar */
+body {
+  padding-top: 80px; /* adjust to your navbar height */
+}
+
+/* Card hover effect */
+.veg-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veg-card:hover {
+  transform: translateY(-8px); /* lift the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove image zoom */
+.veg-card img {
+  transition: none; /* no zoom effect */
+}
+
+/* Add to Cart button hover */
+.btn-success {
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* darker green */
+  transform: scale(1.05);
+}
+
+.card {
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes content & button apart */
+  min-height: 280px; /* keep uniform card height */
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;   /* keeps image proportion */
+  margin: 0 auto;
+}
+
+.card h5, .card h6 {
+  font-size: 14px;       /* reduce product name size */
+  margin: 5px 0;
+}
+
+.card .price {
+  font-size: 13px;       /* smaller price text */
+  color: red;
+}
+
+.card button {
+  margin-top:auto;
+}
+
+.home-container {
+  margin-top: 50px; /* navbar height */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+/* Base style for all nav buttons */
+/* Base style for all nav buttons */
+/* Base buttons: white background, black text */
+.navbar-gradient {
+  background: linear-gradient(135deg, #2839a7, #92068f);
+}
+
+.navbar-nav .btn {
+  background: #a9098e;
+  color: #000;
+  border-radius: 8px;
+  padding: 0px 5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  border: 1px solid #ddd; /* light border for professional look */
+}
+
+/* HOME */
+/* Base link style */
+
+
+/* HOME */
+.navbar-nav .nav-home:hover { background: #28a745; color: #fff; }
+
+/* VEG */
+.navbar-nav .nav-veg:hover { background: #28a745; color: #fff; }
+
+/* NON-VEG */
+.navbar-nav .nav-nonveg:hover { background: #dc3545; color: #fff; }
+
+/* DRINKS */
+.navbar-nav .nav-drinks:hover { background: #17a2b8; color: #fff; }
+
+/* CHOCOLATES */
+.navbar-nav .nav-choco:hover { background: #6f42c1; color: #fff; }
+
+/* CONTACT */
+.navbar-nav .nav-contact:hover { background: #ffc107; color: #000; }
+
+/* ABOUT */
+.navbar-nav .nav-about:hover { background: #20c997; color: #fff; }
+
+/* CART */
+.navbar-nav .nav-cart:hover { background: #fd7e14; color: #fff; }
+
+/* SIGNUP */
+.navbar-nav .nav-signup:hover { background: #007bff; color: #fff; }
+
+/* ORDERS */
+.navbar-nav .nav-orders:hover { background: #6610f2; color: #fff; }
+
+
+
+/* Title Styling */
+.section-title {
+  font-size: 2rem; /* bigger title */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;   /* longer underline */
+  height: 3px;
+  background: #28a745;
+  margin: 8px auto 0;
+  border-radius: 3px;
+}
+
+.cart{
+  position: absolute;
+  top: 25px;
+  right:398px;
+  color: #dc3545;
+  font-weight: 500;
+  font-size: large;
+}
+
+.title{
+  position: absolute;
+  top:20px;
+  left: 20px;
+  font-weight: 500;
+  font-size: xx-large;
+  
+}
+.cart-login-contact{
+position:absolute;
+top:50px;
+right:30px;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ text-align: center;
+ height: 10px;
+ padding-top: 50px;
+ margin-right: 10px;
+ gap:15px;
+}
+.cart-login-contact > * {
+  width: 50px;   /* same width */
+  height: 50px;  /* same height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  outline: hidden;
+  border-radius: 5px;
+  color: #fff;    /* optional */
+}
+.cartcount{
+  position:absolute;
+  top:10px;
+  right: 15px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Two-color scheme */
+.fresh {
+  color: #27ae60; /* Green */
+}
+
+.kart {
+  color: #f39c12; /* Orange */
+  position: relative;
+  margin-left: 5px;
+}
+
+/* Hidden arrow between K and a */

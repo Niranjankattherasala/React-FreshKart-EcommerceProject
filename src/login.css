@@ -1,0 +1,31 @@
+/* Full screen gradient background */
+.login-wrapper {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  padding: 20px;
+}
+
+/* Card styling */
+.login-card {
+  width: 360px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+}
+
+/* Button hover effect */
+.login-card .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.login-card .btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* Rounded inputs */
+.login-card .form-control {
+  border-radius: 50px;
+  padding: 12px 20px;
+}

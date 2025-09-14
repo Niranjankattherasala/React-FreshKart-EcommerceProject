@@ -1,0 +1,18 @@
+.freshkart-logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.fresh {
+  color: #27ae60; /* Green like freshness */
+}
+
+.kart {
+  color: #f39c12; /* Orange like energy/harvest */
+}

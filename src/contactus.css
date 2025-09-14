@@ -1,0 +1,99 @@
+/* src/components/ContactUs.css */
+.contact-us {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 15px;
+  background: #f0f4f8;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.contact-us.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.contact-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4caf50;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.contact-form .input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+  width: 100%;
+  padding: 12px 12px 12px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact-form .input-group label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.contact-form .input-group input:focus + label,
+.contact-form .input-group input:not(:placeholder-shown) + label,
+.contact-form .input-group textarea:focus + label,
+.contact-form .input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 13px;
+  color: #4caf50;
+}
+
+.contact-form .input-group input:focus,
+.contact-form .input-group textarea:focus {
+  border-bottom: 2px solid #4caf50;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,16 @@
+.signup-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  padding: 20px;
+}
+
+.signup-card {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.signup-card h2 {
+  color: #333;
+  font-weight: 600;
+}

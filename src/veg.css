@@ -1,0 +1,25 @@
+.card-title {
+    text-align: center;       /* center text */
+    font-family: serif;       
+    font-weight: 500;         
+    font-size: 1.25rem;       /* instead of 'large', better for consistency */
+    margin: 0.5rem 0;         /* optional spacing */
+}
+
+
+
+.btn-gradient {
+  background: linear-gradient(135deg, rgb(15, 121, 187), rgb(208, 14, 143)); /* gradient colors */
+  color: #fff;           /* text color */
+  border: none;          /* remove border */
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}

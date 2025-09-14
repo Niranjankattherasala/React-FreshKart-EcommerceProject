@@ -1,0 +1,81 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* Cinematic glowing overlay */
+.overlay {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 70%);
+  animation: rotateOverlay 20s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Footer content */
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Footer text */
+.footer-text {
+  font-family: "Cinzel", serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff6, 0 0 30px #f0f;
+}
+
+/* Social icons container */
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Social icon styles */
+.social-icon {
+  color: #fff;
+  font-size: 2.2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+}
+
+/* Neon flicker animation */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+.neon-flicker {
+  animation: flicker 2s infinite;
+}
+
+/* Social icon colors */
+.facebook { color: #3b5998; }
+.instagram { color: #e4405f; }
+.twitter { color: #1da1f2; }
+
+/* Rotating overlay keyframes */
+@keyframes rotateOverlay {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
