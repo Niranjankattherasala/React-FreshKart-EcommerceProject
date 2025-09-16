@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { register } from "./store";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./SignUp.css"; // custom styles
+import "./signup.css"; // custom styles
 
 function SignUp() {
   const {
