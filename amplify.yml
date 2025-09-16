@@ -3,7 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        # Install nvm
+        - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+        - . ~/.nvm/nvm.sh
+        # Install & use Node.js 22
+        - nvm install 22
+        - nvm use 22
+        - node -v
+        - npm -v
+        # Clean install
+        - npm ci
     build:
       commands:
         - npm run build
@@ -13,9 +22,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - node_modules/**
-
-# Use Node 20
-env:
-  variables:
-    NODE_VERSION: 20
+      - node_modules/**/*
