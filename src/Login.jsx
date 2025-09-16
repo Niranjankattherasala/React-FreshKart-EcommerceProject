@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "./store";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Login.css";
+import "./login.css";
 
 function Login() {
   const navigate = useNavigate();

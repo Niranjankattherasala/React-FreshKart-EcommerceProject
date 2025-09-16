@@ -1,6 +1,6 @@
 // src/components/ContactUs.jsx
 import React, { useState, useEffect } from "react";
-import "./ContactUs.css";
+import "./contactus.css";
 
 function ContactUs() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
